@@ -13,7 +13,7 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'dolfijn300', // Usually your GitHub org/user name.
+  organizationName: 'dolfijn3000', // Usually your GitHub org/user name.
   projectName: 'prog-site', // Usually your repo name.
 
   presets: [
