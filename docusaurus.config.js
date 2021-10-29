@@ -19,23 +19,61 @@ const config = {
   presets: [
     [
       '@docusaurus/preset-classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
+          remarkPlugins: [require('mdx-mermaid')],
         },
+        
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/main/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
       }),
+    ],
+  ],
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'ooa',
+        path: 'ooa',
+        routeBasePath: 'ooa',
+        sidebarPath: require.resolve('./sidebars.js'),
+        // ... other options
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'c-sharp',
+        path: 'c-sharp',
+        routeBasePath: 'c-sharp',
+        sidebarPath: require.resolve('./sidebars.js'),
+        // ... other options
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'front-end',
+        path: 'front-end',
+        routeBasePath: 'front-end',
+        sidebarPath: require.resolve('./sidebars.js'),
+        // ... other options
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'databases',
+        path: 'databases',
+        routeBasePath: 'databases',
+        sidebarPath: require.resolve('./sidebars.js'),
+        // ... other options
+      },
     ],
   ],
 
@@ -54,6 +92,34 @@ const config = {
             docId: 'intro',
             position: 'left',
             label: 'docs',
+          },
+          {
+            to: '/ooa/intro',    // ./docs/Intro.md
+            label: 'OOA',
+            position: 'left',
+            docId: 'intro',
+            activeBaseRegex: `/ooa/`,
+          },
+          {
+            to: '/c-sharp/intro',    // ./docs/Intro.md
+            label: 'c#',
+            position: 'left',
+            docId: 'intro',
+            activeBaseRegex: `/c-sharp/`,
+          },
+          {
+            to: '/front-end/intro',    // ./docs/Intro.md
+            label: 'front-end',
+            position: 'left',
+            docId: 'intro',
+            activeBaseRegex: `/front-end/`,
+          },
+          {
+            to: '/databases/intro',    // ./docs/Intro.md
+            label: 'databases',
+            position: 'left',
+            docId: 'intro',
+            activeBaseRegex: `/databases/`,
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
