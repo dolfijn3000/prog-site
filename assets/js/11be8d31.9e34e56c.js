@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkprog_site=self.webpackChunkprog_site||[]).push([[766],{9248:function(e){e.exports=JSON.parse('{"pluginId":"c-sharp","version":"current","label":"Next","banner":null,"badge":false,"className":"docs-version-current","isLast":true,"docsSidebars":{"tutorialSidebar":[{"type":"link","label":"intro","href":"/prog-site/c-sharp/intro"}]}}')}}]);

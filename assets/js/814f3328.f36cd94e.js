@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkprog_site=self.webpackChunkprog_site||[]).push([[535],{5641:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"De site is opgestart.","permalink":"/prog-site/blog/welcome-docusaurus-v2"}]}')}}]);

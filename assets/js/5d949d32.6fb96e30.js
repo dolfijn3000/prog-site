@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkprog_site=self.webpackChunkprog_site||[]).push([[497],{8851:function(e){e.exports=JSON.parse('{"pluginId":"front-end","version":"current","label":"Next","banner":null,"badge":false,"className":"docs-version-current","isLast":true,"docsSidebars":{"tutorialSidebar":[{"type":"link","label":"intro","href":"/prog-site/front-end/intro"}]}}')}}]);
